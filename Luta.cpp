@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>//Para poder usar o tipo de dado String.
-#include <ctime>//Para poder usar o tempo como "semente" do gerador.
+#include <string>
+//Para usar o gerador em função do tempo
+#include <ctime>
 
 using namespace std;
 int main(int argc, char* args[])
@@ -21,7 +22,7 @@ int main(int argc, char* args[])
 
   // imprimi na tela 
 	cout << "Digite o nome do jogador 2:" << endl; 
-	//Salva o nome digitado na variavel jog2
+	//recebe e salva o nome digitado na variavel jog2
 	cin >> jog2;
 	//enquanto sair é falso ele repeti o laço
 	while (sair == false) {
@@ -49,9 +50,9 @@ int main(int argc, char* args[])
 		//se a condição do if for verdadeira ele roda, oq esta dentro do if 
 		if (dado6 > 4)
 		{
-		  // vida menos o dano gerado
+			 // vida menos o dano gerado
 			vida1 = vida1 - dado6; 
-		  // Mostra o dano causado/ a vida perdida 
+			// imprimi o dano causado/ a vida perdida 
 			cout << jog1 << " Dano:" << -dado6 << endl; 
 			// imprimi na tela 
 			cout << jog2 << " Acertou!" << endl;
@@ -66,35 +67,41 @@ int main(int argc, char* args[])
 			//imprimi na tela 
 			cout << jog2 << "Errou!" << endl; /
 			cout << "Proxima jogada (Digite enter):" << endl
+			//"pausa" o jogo até aperta enter para ir à proxima partida 
 			cin.get();
 
 		}
 			//Gera um número aletorio
 		dado6 = rand() % 6 + 1;
 
-		
+		//se a condição do if for verdadeira ele roda, oq esta dentro do if 
 		if (dado6 > 4)
 		{
-
+			// vida menos o dano gerado
 			vida2 = vida2 - dado6; 
+			// imprimi o dano causado/ a vida perdida 
 			cout << jog2 << "Dano:" << -dado6 << endl;
+			// imprimi na tela 
 			cout << jog1 << "Acertou!" << endl;
 			cout << "Proxima jogada (Digite enter):" << endl; 
+			//"pausa" o jogo até aperta enter para ir à proxima partida 
 			cin.get();
 		}
 
-		
+		//Se for verdadeiro a condção ele executa o que esta dentro do else if 
 		else if (dado6 <= 4) {
 
+			//imprimi na tela 
 			cout << jog1 << "Errou!" << endl; 
 			cout << "Proxima jogada (Digite enter):" << endl; 
+			//"pausa" o jogo até aperta enter para ir à proxima partida 
 			cin.get();
 
 		}
 
 		//cout << "Vida:" << vida1 << "           " << "Vida:" << vida2 << endl;
    
-    //Limpa a tela ao final de cada rodada 
+    		//Limpa a tela ao final de cada rodada 
 		system("cls"); 
 
 		//se a vida, tanto do jog1 ou jog2 chega a zero, sair é verdadeiro, não limpara a tela 
