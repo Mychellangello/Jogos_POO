@@ -6,21 +6,21 @@
 using namespace std;
 int main(int argc, char* args[])
 {
-   //Variavel para sair ou permanecer no laço
+	 //Variavel para sair ou permanecer no laço
 	bool sair = false;
-  //Variavel que guarda os nomes dos jogadores
+  	//Variavel que guarda os nomes dos jogadores
 	string jog1, jog2; 
-  //valor da vida inicial 
+	 //valor da vida inicial 
 	int vida1 = 20, vida2 = 20; 
-  //valor do ataque e defesa
+  	//valor do ataque e defesa
 	int A = 4, D = 2; 
 
-  // imprimi na tela 
+	 // imprimi na tela 
 	cout << "Digite o nome do jogador 1:" << endl; 
-  //Salva o nome digitado na variavel jog1
+  	//Salva o nome digitado na variavel jog1
 	cin >> jog1; 
 
-  // imprimi na tela 
+  	// imprimi na tela 
 	cout << "Digite o nome do jogador 2:" << endl; 
 	//recebe e salva o nome digitado na variavel jog2
 	cin >> jog2;
@@ -37,7 +37,7 @@ int main(int argc, char* args[])
 		cout << "D:" << D << "           " << "D:" << D << endl;
 
   
-    //faz com que, as "coisas" imprimidas na tela continue na tela
+		 //faz com que, as "coisas" imprimidas na tela continue na tela
 		system("pause"); 
 
 		int dado6;
@@ -121,6 +121,7 @@ int main(int argc, char* args[])
 	if (vida1 > 0) cout << jog1 << "Venceu!" << endl;
 	else if (vida2 > 0) cout << jog2 << "Venceu!" << endl;
 	else cout << "Os dois perderam!" << endl;
+	//Retorna ao inicio
 	return 0;
 
 
