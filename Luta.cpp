@@ -13,7 +13,7 @@ int main(int argc, char* args[])
 	 //valor da vida inicial 
 	int vida1 = 20, vida2 = 20; 
   	//valor do ataque e defesa
-	int A = 4, D = 2; 
+	int Atk = 4, Dfs = 2; 
 
 	 // imprimi na tela 
 	cout << "Digite o nome do jogador 1:" << endl; 
@@ -33,8 +33,8 @@ int main(int argc, char* args[])
 		cout << " ^                       ^" << endl;
 		cout << jog1 << "             " << jog2 << endl;
 		cout << "Vida:" << vida1 << "           " << "Vida:" << vida2 << endl;
-		cout << "A:" << A << "           " << "A:" << A << endl;
-		cout << "D:" << D << "           " << "D:" << D << endl;
+		cout << "Atk:" << Atk << "           " << "Atk:" << Atk << endl;
+		cout << "Dfs:" << Dfs << "           " << "Dfs:" << Dfs << endl;
 
   
 		 //faz com que, as "coisas" imprimidas na tela continue na tela
@@ -115,12 +115,12 @@ int main(int argc, char* args[])
 	}
 
 	//imprimi na tela
-	cout << "Fim de jogo!" << endl;
+	cout << " Fim de jogo!" << endl;
 
 	//faz a logica do "se" e imprimi na tela determindo o vencedor 
-	if (vida1 > 0) cout << jog1 << "Venceu!" << endl;
-	else if (vida2 > 0) cout << jog2 << "Venceu!" << endl;
-	else cout << "Os dois perderam!" << endl;
+	if (vida1 > 0) cout << jog1 << " Venceu!" << endl;
+	else if (vida2 > 0) cout << jog2 << " Venceu!" << endl;
+	else cout << " Os dois perderam!" << endl;
 	//Retorna ao inicio
 	return 0;
 
