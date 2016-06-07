@@ -14,11 +14,11 @@ int main(int argc, char* args[])
 	  //quantidade de  espacos inicial de cada carrinho
 	int total1 = 0, total2 = 0;
   //imprimi na tela
-	cout << "Digite o nome do primeiro piloto:" << endl; 
+	cout << "Digite o nome do jogador 1:" << endl; 
 	//recebe e salva o nome digitado na variavel jog1
 	cin >> jog1; 
   //imprimi na tela
-	cout << "Digite o nome do segundo piloto:" << endl; 
+	cout << "Digite o nome do jogador 2:" << endl; 
   //recebe e salva o nome digitado na variavel jog2
 	cin >> jog2; 
 
@@ -49,7 +49,7 @@ int main(int argc, char* args[])
 
 		cout << "LARGADA:                                                               CHEGADA:" << endl;
 
-		cout << "Piloto 1:" << jog1 << endl; 
+		cout << "Jogador 1:" << jog1 << endl; 
 		imprimir_espacos(total1);
 		cout << "  _  " << endl;
 	  //defini os espaços
@@ -62,7 +62,7 @@ int main(int argc, char* args[])
 		cout << "Valor que andou: " << total1 << endl;  //Total de espaços andando pelo carrinho 1
 
 
-		cout << "Piloto 2:" << jog2 << endl;
+		cout << "Jogador 2:" << jog2 << endl;
 		imprimir_espacos(total2);
 		cout << "  _  " << endl;
 	  //definindo os espaços
